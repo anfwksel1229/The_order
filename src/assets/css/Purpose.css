@@ -1,0 +1,26 @@
+#Purpose {
+  font-size: 1.4em;
+  font-family: 'SUIT';
+  font-weight: 500;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-top: 10%;
+  margin-bottom: 100px;
+}
+#Purpose p:nth-child(1) {
+  margin-bottom: 150px;
+}
+#Purpose .margin-bottom30 {
+  margin-bottom: 30px;
+}
+#Purpose .margin-bottom70 {
+  margin-bottom: 70px;
+}
+#Purpose .Purpose_title {
+  margin-bottom: 30px;
+}
+@media (max-width: 1280px) {
+  #Purpose {
+    padding: 20% 5% 0 5%;
+  }
+}

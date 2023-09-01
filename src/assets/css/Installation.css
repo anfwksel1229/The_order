@@ -1,0 +1,55 @@
+#Installation {
+  width: 100%;
+  margin: 0 auto;
+}
+.slick-slider {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.custom-slider div > img {
+  width: 90%;
+  height: 300px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+#Installation .title {
+  text-align: center;
+  color: #c90040;
+  font-size: 55px;
+  font-family: 'SUIT';
+  font-weight: 500;
+  margin: 0;
+}
+#Installation > p:first-child {
+  color: #aaa;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'TmonMonsori';
+  text-align: center;
+  margin-top: 100px;
+}
+#Installation > p:nth-child(3) {
+  text-align: center;
+  display: block;
+  font-size: 20px;
+  color: #222;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  margin: 30px 0 60px;
+}
+@media (max-width: 769px) {
+  .custom-slider div > img {
+    height: auto;
+  }
+  #Installation .title {
+    font-size: 32px;
+  }
+  #Installation > p:first-child {
+    color: #aaa;
+    font-size: 16px;
+  }
+  #Installation > p:nth-child(3) {
+    font-size: 16px;
+  }
+}

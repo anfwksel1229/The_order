@@ -1,0 +1,26 @@
+#Policy {
+  font-size: 1.4em;
+  font-family: 'SUIT';
+  font-weight: 500;
+  max-width: 1280px;
+  height: 100vh;
+  margin: 0 auto;
+  padding-top: 10%;
+  margin-bottom: 100px;
+}
+#Policy p:nth-child(1) {
+  margin-bottom: 150px;
+}
+#Policy .margin-bottom {
+  margin-bottom: 50px;
+}
+#Policy .Policy_title {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1280px) {
+  #Policy {
+    padding: 20% 5% 0 5%;
+    height: auto;
+  }
+}

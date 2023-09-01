@@ -1,0 +1,103 @@
+.Force_wrap .Support_title {
+  text-align: center;
+}
+.Force_wrap .Support_title p:nth-child(1) {
+  color: #aaa;
+  font-size: 25px;
+  font-family: 'TmonMonsori';
+}
+.Force_wrap .Support_title p:nth-child(2) {
+  color: #c90040;
+  font-size: 55px;
+  font-family: 'SUIT';
+  font-weight: 500;
+}
+.Force_wrap .Support_title span {
+  display: inline-block;
+  color: #222;
+  font-size: 20px;
+  margin: 30px 80px 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 400;
+}
+.SupportContainer {
+  display: flex;
+  align-items: center;
+  height: 350px;
+  margin-top: 80px;
+  justify-content: center;
+}
+.SupportContainer img:nth-child(1),
+.SupportContainer img:nth-child(3),
+.SupportContainer img:nth-child(5) {
+  display: inline-flex;
+  align-self: flex-start;
+}
+.SupportContainer img:nth-child(2),
+.SupportContainer img:nth-child(4) {
+  display: inline-flex;
+  align-self: flex-end;
+}
+/* 테블릿 */
+@media (max-width: 1280px) {
+  .Force_wrap .Support_title p:nth-child(2) {
+    font-size: 3rem;
+  }
+  .SupportContainer img:nth-child(1),
+  .SupportContainer img:nth-child(3),
+  .SupportContainer img:nth-child(5) {
+    width: 180px;
+  }
+  .SupportContainer img:nth-child(2),
+  .SupportContainer img:nth-child(4) {
+    align-self: unset;
+    width: 180px;
+  }
+}
+/* 모바일 */
+@media (max-width: 768px) {
+  .Force_wrap .Support_title p:nth-child(1) {
+    font-size: 16px;
+  }
+  .Force_wrap .Support_title p:nth-child(2) {
+    font-size: 32px;
+  }
+  .Force_wrap .Support_title span {
+    margin: 30px 10px 80px;
+  }
+  .Force_wrap > div:nth-child(1) {
+    padding: 80px 0;
+  }
+  .SupportContainer02 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .SupportContainer02 img {
+    width: 30%;
+  }
+}
+@media (max-width: 500px) {
+  .Force_wrap .Support_title p:nth-child(1) {
+    font-size: 16px;
+  }
+  .Force_wrap .Support_title p:nth-child(2) {
+    font-size: 32px;
+  }
+  .Force_wrap .Support_title span {
+    margin: 30px 10px 80px;
+  }
+  .Force_wrap > div:nth-child(1) {
+    padding: 80px 0;
+  }
+  .SupportContainer02 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .SupportContainer02 img {
+    width: 30%;
+  }
+}

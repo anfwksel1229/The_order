@@ -1,0 +1,154 @@
+/* 스타일을 적용할 이미지 컨테이너 */
+#Shooting_Wrap {
+  max-width: 1280px;
+  height: 100%;
+  margin: 0 auto;
+}
+#Shooting_Wrap > p {
+  text-align: end;
+  font-size: 18px;
+  color: #ff2d2d;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  margin-top: 30px;
+}
+
+#Shooting_Wrap .Shooting_title {
+  text-align: center;
+  margin-top: 80px;
+}
+#Shooting_Wrap .Shooting_title p:nth-child(1) {
+  color: #aaa;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'TmonMonsori';
+}
+#Shooting_Wrap .Shooting_title p:nth-child(2) {
+  color: #c90040;
+  font-size: 55px;
+  font-family: 'SUIT';
+  font-weight: 500;
+}
+#Shooting_Wrap .Shooting_title > span {
+  display: block;
+  font-size: 20px;
+  color: #222;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  margin: 30px 0 60px;
+}
+#Shooting_Wrap .Shootiong_image {
+  width: 100%;
+  height: 100vh;
+}
+/* 이미지 애니메이션 스타일 */
+#Shooting_Wrap .Shootiong_image {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  text-align: center;
+  margin: 0;
+}
+
+#Shooting_Wrap .Shootiong_image picture {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: auto;
+  opacity: 0;
+  animation: fade-in-out 8s linear infinite 0s;
+}
+#Shooting_Wrap .Shootiong_image .img1 {
+}
+#Shooting_Wrap .Shootiong_image .img2 {
+  animation-delay: 4s;
+}
+
+@keyframes fade-in-out {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+
+  30% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+/* 테블릿 */
+@media (max-width: 1280px) {
+  #Shooting_Wrap .Shooting_title p:nth-child(2) {
+    font-size: 3em;
+  }
+  #Shooting_Wrap .Shooting_title > span {
+    margin: 30px 0 0;
+  }
+  #Shooting_Wrap .Shootiong_image {
+    height: 500px;
+  }
+  #Shooting_Wrap > p {
+    width: 90%;
+    margin: 0 auto;
+  }
+  #Shooting_Wrap .Shootiong_image picture {
+    width: 90%;
+    margin: 0 auto;
+  }
+  #Shooting_Wrap .Shootiong_image picture img {
+    width: 100%;
+  }
+}
+/* 모바일 */
+@media (max-width: 768px) {
+  #Shooting_Wrap {
+    padding: 0 20px;
+    height: fit-content;
+    padding-top: 100px;
+  }
+  #Shooting_Wrap .Shooting_title {
+    margin-top: 100px;
+  }
+  #Shooting_Wrap .Shooting_title > span {
+    font-size: 16px;
+  }
+  #Shooting_Wrap .Shooting_title p:nth-child(1) {
+    font-size: 16px;
+  }
+  #Shooting_Wrap .Shooting_title p:nth-child(2) {
+    font-size: 32px;
+  }
+  #Shooting_Wrap .Shootiong_image {
+    height: 600px;
+  }
+  #Shooting_Wrap .Shootiong_image picture {
+    width: 100%;
+    height: auto;
+  }
+  #Shooting_Wrap .Shootiong_image picture img {
+    width: 100%;
+  }
+  #Shooting_Wrap > p {
+    font-size: 16px;
+  }
+  #Shooting_Wrap .Shootiong_image .img2 {
+    animation-delay: 2.5s;
+  }
+  #Shooting_Wrap .Shootiong_image .img3 {
+    animation-delay: 5s;
+  }
+}
+@media (max-width: 500px) {
+  #Shooting_Wrap .Shootiong_image {
+    height: 320px;
+  }
+}
